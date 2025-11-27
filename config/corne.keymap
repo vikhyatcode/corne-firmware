@@ -16,8 +16,8 @@
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ESC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | MOD |
-            // | GUI  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | TILDE |
-            //                     | LSHIFT | LWR | SPC |   | BSPC | RSE | RSHFT |
+            // | GUI  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | `   |
+            //                    | LSHIFT | LWR | SPC |   | BSPC | RSE | RSHFT |
             // -----------------------------------------------------------------------------------------
             bindings = <
                 &kp TAB   &kp Q      &kp W      &kp E      &kp R      &kp T        &kp Y      &kp U      &kp I       &kp O       &kp P        &kp ESC
@@ -29,10 +29,10 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |     |     |     |     |     | ESC |
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  6  |  7  |  8  |  9  |  0  | ESC |
             // | LCTRL|  ^  |  &  |  *  |  |  |  \  | `  |  +  |  -  |  =  |  /  |     | MOD |
             // | GUI  |  /  |  ?  |  {  |  } |  '   |  "   |  (   |  )   |     |     |      |
-            //                  | LSHIFT |     | SPC |   | ENT |     | RSHFT |
+            //                 | LSHIFT |     | SPC |   | ENT |     | RSHFT |
             // -----------------------------------------------------------------------------------------
             bindings = <
                 &kp TAB     &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp ESC
@@ -44,29 +44,29 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  ESC |  1 |  2 |  3 |  4 |  5 |     |  F6  | HOME | ↑ | END  | F10 | BSPC |
-            // | LCTRL|  6 |  7 |  8 |  9 |  0 |     | PGUP | ←   | ↓ | →    |     |      |
-            // |  GUI |    |    |    |    |    |     |      |     |    |      |     |      |
+            // |  ESC |  1 |  2 |  3 |  4 |  5 |     | F6 | HOME | ↑ | END | F10 | BSPC |
+            // | LCTRL|  6 |  7 |  8 |  9 |  0 |     | ;  | ←   | ↓ | →   |     |      |
+            // |  GUI |     |     |     |     |     |     |     |     |     |      |      |      |
             //                     | LSHIFT |      | SPC |      | ENT |      | RSHFT |
             // -----------------------------------------------------------------------------------------
             bindings = <
                 // Row 1
-                &kp ESC     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans      &kp F6     &kp HOME    &kp UP      &kp END     &kp F10
+                &kp ESC     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       &trans      &kp F6      &kp HOME     &kp UP      &kp END      &kp BSPC
                 // Row 2
-                &kp LCTRL   &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans      &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT   &trans
+                &kp LCTRL   &kp N6     &kp N7     &kp N8     &kp N9     &kp N0       &trans      &kp SEMI    &kp LEFT     &kp DOWN    &kp RIGHT    &trans
                 // Row 3
-                &kp LGUI    &trans     &trans     &trans     &trans     &trans     &trans      &trans      &trans      &trans      &trans      &trans
+                &kp LGUI    &trans     &trans     &trans     &trans     &trans       &trans      &kp DOT       &trans       &trans      &trans       &trans
                 // Thumb row
-                               &kp LSHFT   &trans      &kp SPACE      &kp ENTER    &trans       &kp RSHFT
+                               &kp LSHFT   &trans      &kp SPACE      &kp ENTER     &trans      &kp RSHFT
             >;
         };
 
         new_layer {
             // -----------------------------------------------------------------------------------------
-            // |      |      |    |      |     |     |   |    |     |     |     |     |     |
-            // | BTCLR| BT1  | BT2 | BT3  | BT4 | BT5 |   |     |     |     |     |     |     |
-            // |      |      |    |      |     |     |   |     |     |     |     |     |     |
-            //                  |      |      |   |   |    |     |   |
+            // |      |      |      |      |      |      |   |      |     |     |     |     |     |
+            // | BTCLR| BT1  | BT2  | BT3  | BT4  | BT5  |   |      |     |     |     |     |     |
+            // |      |      |      |      |      |      |   |      |     |     |     |     |     |
+            //                    |      |      |      |      |      |      |
             // -----------------------------------------------------------------------------------------
             bindings = <
                 &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
