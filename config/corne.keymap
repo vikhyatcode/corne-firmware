@@ -53,7 +53,7 @@
                 // Row 1
                 &kp ESC     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       &trans      &kp HOME      &kp UP     &kp END      &kp END      &kp ESC
                 // Row 2
-                &kp LCTRL   &kp N6     &kp N7     &kp N8     &kp N9     &kp N0       &SEMI      &kp LEFT    &kp DOWN     &kp RIGHT     &trans    &trans
+                &kp LCTRL   &kp N6     &kp N7     &kp N8     &kp N9     &kp N0       &kp SEMI      &kp LEFT    &kp DOWN     &kp RIGHT     &trans    &trans
                 // Row 3
                 &kp LGUI    &trans     &trans     &kp LBKT   &kp RBKT     &trans       &trans      &kp DOT       &trans       &trans      &trans       &trans
                 // Thumb row
