@@ -47,7 +47,7 @@
             // |  ESC |  1 |  2 |  3 |  4 |  5 |     | F6 | HOME | ↑ | END | F10 | ESC |
             // | LCTRL|  6 |  7 |  8 |  9 |  0 |     | ;  | ←   | ↓ | →   |     |      |
             // |  GUI |     |     |     |     |     |     |     |     |     |      |      |      |
-            //                     | LSHIFT |      | SPC |      | ENT |      | RSHFT |
+            //                     | LSHIFT |      | ENT |      | BSPC |      | RSHFT |
             // -----------------------------------------------------------------------------------------
             bindings = <
                 // Row 1
@@ -57,7 +57,7 @@
                 // Row 3
                 &kp LGUI    &trans     &trans     &kp LBKT   &kp RBKT     &trans       &trans      &kp DOT       &trans       &trans      &trans       &trans
                 // Thumb row
-                               &kp LSHFT   &trans      &kp SPACE      &kp ENTER     &trans      &kp RSHFT
+                               &kp LSHFT   &trans      &kp ENTER      &kp BSPC     &trans      &kp RSHFT
             >;
         };
 
